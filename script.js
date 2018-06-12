@@ -81,16 +81,25 @@ inb.onclick = function () {
 }
 var del = document.getElementById('del');
 del.onclick = function () {
-	var delval = document.getElementById('dele').value;
+	var delval = document.getElementById('delet').value;
 	delete object[delval];
 		console.log(object);
 }
 var protbt = document.getElementById('protobtn');
 protbt.onclick = function () {
-	var pr = document.getElementById('proto').value;
-	var vl = document.getElementById('proto1').value;
-	object.__proto__[pr] = vl;
+	var ob2 = new Object();
+	object.__proto__=ob2;
 	console.log(object);
+
+	// var vl = {}
+	// var pr = document.getElementById('proto').value;
+	 // vl = document.getElementById('proto1').va;
+	// object.__proto__ = vl;
+	// console.log(object);
+}
+var dele = document.getElementById('delpr');
+dele.onclick = function () {
+	delete object.__proto__;
 }
 
 }
