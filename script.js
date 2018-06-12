@@ -89,7 +89,7 @@ var protbt = document.getElementById('protobtn');
 protbt.onclick = function () {
 	var pr = document.getElementById('proto').value;
 	var vl = document.getElementById('proto1').value;
-	object.__proto__[pr] = val;
+	object.__proto__[pr] = vl;
 	console.log(object);
 }
 
